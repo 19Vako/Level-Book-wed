@@ -1,0 +1,86 @@
+h1 {
+    margin: 0;
+}
+
+a {
+   text-decoration: none;
+}
+
+.HeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4vw;
+    padding: 1vw;
+}
+
+.logoLink {
+    display: flex;
+    align-items: center;
+    width: 10vw;
+    height: 4vw;
+}
+
+.logoContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 15vw;
+    transition: margin-left 1s ease; 
+    position: absolute; 
+}
+
+.logoIcon {
+    color: white;
+    height: 4vw;
+    width: 4vw;
+    margin-right: 1vw;
+}
+
+.logoLink h1 {
+    font-family: 'Noto';
+    font-size: 1.7vw;
+    color: white;
+}
+
+.link {
+    font-family: 'Noto';
+    font-size: 2vw;
+    color: white;
+}
+
+.logoLink:hover .logoContainer {
+   margin-left: 8vw;
+}
+
+.levelsList {
+    display: flex;
+    width: 67vw;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.linkContainer {
+    margin-left: 2vw;
+}
+
+.iconUser {
+    width: 3vw;
+    height: 3vw;
+    color: white;
+    margin-left: 1vw;
+}
+
+.iconTheme {
+    width: 3vw;
+    height: 3vw;
+    color: white;
+    transition: transform 0.5s ease;
+    
+}
+
+.iconTheme:hover {
+   transform: rotate(160deg);
+}
+
+
