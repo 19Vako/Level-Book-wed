@@ -1,12 +1,16 @@
 import React from 'react'
 import Header from '../components/Header'
+import Slider from '../components/Slider'
 
-const main = () => {
+
+const Main = () => {
+  
   return (
     <div>
-        <Header/>
+      <Header/>
+      <Slider/>
     </div>
   )
 }
 
-export default main
+export default Main

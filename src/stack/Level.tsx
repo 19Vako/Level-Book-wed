@@ -1,14 +1,14 @@
 import React from 'react'
 import { useLocation } from 'react-router'
+import Header from '../components/Header'
 
 const Level = () => {
   
   const location = useLocation()
-  const { level } = location.state
 
   return (
    <div>
-      <h1>{level}</h1>
+      <Header/>
    </div>
   )
 }

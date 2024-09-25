@@ -1,21 +1,22 @@
 import React from 'react'
 import './headerStyles.css'
+import { Link } from 'react-router-dom';
 
-
-import { useAppSelector } from '../store/hooks';
+import { useAppSelector, useAppDispatch } from '../store/hooks';
+import { changeTheme } from '../store/slices/themeSlice';
 
 // icons
 import { SiFacebookgaming } from "react-icons/si";
 import { FaUserCircle } from "react-icons/fa";
 import { ImSun } from "react-icons/im";
-import { Link } from 'react-router-dom';
+import { FaMoon } from "react-icons/fa";
 
 
 
 const Header = () => {
 
+  const Dispatch = useAppDispatch() 
   const theme = useAppSelector(state => state)
-  console.log(theme)
 
   return (
     
@@ -29,39 +30,15 @@ const Header = () => {
         </div>
       </Link>
 
-      <div className='levelsList'>
-
-       <Link className='linkContainer' to= '/level' state={{ level: "Уровень 2"}} >
-       <h1 className='link'>A1</h1>
-       </Link>
-
-       <Link className='linkContainer' to= '/level' state={{ level: "Уровень 2"}} >
-       <h1 className='link'>A2</h1>
-       </Link>
-
-       <Link className='linkContainer' to= '/level' state={{ level: "Уровень 2"}} >
-       <h1 className='link'>B1</h1>
-       </Link>
-
-       <Link className='linkContainer' to= '/level' state={{ level: "Уровень 2"}} >
-       <h1 className='link'>B2</h1>
-       </Link>
-
-       <Link className='linkContainer' to= '/level' state={{ level: "Уровень 2"}} >
-       <h1 className='link'>C1</h1>
-       </Link>
-
-       <Link className='linkContainer' to= '/level' state={{ level: "Уровень 2"}} >
-       <h1 className='link'>C2</h1>
-       </Link>
-
+     
+    <div className='headerOptions'>
+      <div className='themeAndUser' onClick={() => Dispatch(changeTheme())}>
+        {theme.Theme.bodyBackground === 'white' ? <ImSun className='iconTheme'/> : <FaMoon className='iconTheme' style={{transform: 'none'}}/>}
       </div>
-
-      <div className='themeAndUser'>
-        <ImSun className='iconTheme'/>
-        <FaUserCircle className='iconUser'/>
-      </div>
+      <FaUserCircle className='iconUser'/>
     </div>
+
+   </div>
   )
 }
 

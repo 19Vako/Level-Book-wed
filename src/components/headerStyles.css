@@ -53,16 +53,18 @@ a {
    margin-left: 8vw;
 }
 
-.levelsList {
+
+.themeAndUser {
     display: flex;
-    width: 67vw;
-    flex-direction: row;
-    justify-content: end;
+    align-items: center;
 }
 
-.linkContainer {
-    margin-left: 2vw;
+.headerOptions {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
+
 
 .iconUser {
     width: 3vw;
@@ -72,8 +74,8 @@ a {
 }
 
 .iconTheme {
-    width: 3vw;
-    height: 3vw;
+    width: 2.5vw;
+    height: 2.5vw;
     color: white;
     transition: transform 0.5s ease;
     
@@ -82,5 +84,7 @@ a {
 .iconTheme:hover {
    transform: rotate(160deg);
 }
+
+
 
 
