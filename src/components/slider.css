@@ -6,13 +6,16 @@ p {
 .levelSlide {
     display: flex;
     justify-content: center;
-    height: 40vw;
-    width: 30vw;
+    height: 30vw;
+    width: 25vw;
     flex-shrink: 0;
     border-radius: 2vw;
     margin-left: 1vw;
     margin-right: 1vw;
     padding: 1vw;
+    transform-style: preserve-3d;
+    position: relative;
+   
 }
 
 .slideText {
@@ -43,5 +46,24 @@ p {
     display: none;
 }
 
+.first {
+    backface-visibility: hidden;
+    position: absolute;
+    width: 25vw;
+    height: 30vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.first h1 {
+    font-size: 2vw;
+}
+
+.last {
+    backface-visibility: hidden;
+    width: 25vw;
+    height: 30vw;
+    position: absolute;
+}
 
