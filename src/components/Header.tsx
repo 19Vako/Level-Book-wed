@@ -20,22 +20,29 @@ const Header = () => {
 
   return (
     
-    <div className='HeaderContainer' style={{backgroundColor: theme.Theme.headerBackground}}>
+    <div  className='HeaderContainer' style={{backgroundColor: theme.Theme.headerBackground}}>
       
+    <div className='Header' >
+
       <Link to='/' className='logoLink'>
-        <h1>Головна</h1>
         <div className='logoContainer' style={{backgroundColor: theme.Theme.headerBackground}}>
           <SiFacebookgaming className='logoIcon' /> 
           <h1>Level Book</h1>
         </div>
       </Link>
 
+
+      <div className='Levels'>
+      
+      </div>
      
-    <div className='headerOptions'>
+      <div className='headerOptions'>
       <div className='themeAndUser' onClick={() => Dispatch(changeTheme())}>
         {theme.Theme.bodyBackground === 'white' ? <ImSun className='iconTheme'/> : <FaMoon className='iconTheme' style={{transform: 'none'}}/>}
       </div>
       <FaUserCircle className='iconUser'/>
+      </div>
+
     </div>
 
    </div>

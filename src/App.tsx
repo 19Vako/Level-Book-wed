@@ -10,7 +10,6 @@ import { useAppSelector } from './store/hooks';
 // Stack
 import Main from './stack/main';
 import User from './stack/user';
-import Level from './stack/Level';
 
 
 function App() {
@@ -22,7 +21,7 @@ function App() {
           
             <Route path='/' element={<Main />} />
             <Route path='/user' element={<User />} />
-            <Route path='/level' element={<Level />} />
+            
             
           </Routes>
         </Router>

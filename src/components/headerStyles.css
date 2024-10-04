@@ -7,17 +7,24 @@ a {
 }
 
 .HeaderContainer {
+   display: flex;
+   justify-content: center;
+}
+
+.Header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     height: 4vw;
     padding: 1vw;
+    width: 70vw;
 }
+
 
 .logoLink {
     display: flex;
     align-items: center;
-    width: 10vw;
+    width: 15vw;
     height: 4vw;
 }
 
@@ -26,8 +33,6 @@ a {
     flex-direction: row;
     align-items: center;
     width: 15vw;
-    transition: margin-left 1s ease; 
-    position: absolute; 
 }
 
 .logoIcon {
@@ -49,9 +54,13 @@ a {
     color: white;
 }
 
-.logoLink:hover .logoContainer {
-   margin-left: 8vw;
+
+
+.Levels {
+    color: white;
+    
 }
+
 
 
 .themeAndUser {
@@ -64,7 +73,6 @@ a {
     flex-direction: row;
     align-items: center;
 }
-
 
 .iconUser {
     width: 3vw;
