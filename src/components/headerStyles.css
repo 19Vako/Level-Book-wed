@@ -20,7 +20,6 @@ a {
     width: 70vw;
 }
 
-
 .logoLink {
     display: flex;
     align-items: center;
@@ -56,10 +55,27 @@ a {
 
 
 
+
+
 .Levels {
-    color: white;
-    
+    display: flex;
+    justify-content: space-between;
+    width: 20vw;
+    margin-right: 4vw;
 }
+
+.Levels h1 {
+    font-family: 'Noto';
+    color: white;
+    font-size: 1.5vw;
+    transition: color 0.3s ease;
+}
+
+.Levels h1:hover {
+    color: #f2d13e
+}
+
+
 
 
 

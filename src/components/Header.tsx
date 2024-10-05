@@ -32,11 +32,17 @@ const Header = () => {
       </Link>
 
 
-      <div className='Levels'>
       
-      </div>
      
       <div className='headerOptions'>
+        <div className='Levels'>
+        <Link to='/A1'><h1>A1</h1></Link>
+        <Link to='/A2'><h1>A2</h1></Link>
+        <Link to='/B1'><h1>B1</h1></Link>
+        <Link to='/B2'><h1>B2</h1></Link>
+        <Link to='/C1'><h1>C1</h1></Link>
+        <Link to='/C2'><h1>C2</h1></Link>
+      </div>
       <div className='themeAndUser' onClick={() => Dispatch(changeTheme())}>
         {theme.Theme.bodyBackground === 'white' ? <ImSun className='iconTheme'/> : <FaMoon className='iconTheme' style={{transform: 'none'}}/>}
       </div>
