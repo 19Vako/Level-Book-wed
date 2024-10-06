@@ -27,7 +27,7 @@ export const ThemeSlice = createSlice({
             if(state.bodyBackground === 'white'){
                 state.headerBackground = '#333745'
                 state.bodyBackground = 'rgb(28, 31, 42)'
-                state.color = 'honeydew'
+                state.color = 'white'
                 state.slideBackground = 'rgb(28, 31, 42)'
             }else {
                 state.headerBackground = '#f2d13e'
