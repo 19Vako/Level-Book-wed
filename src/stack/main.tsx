@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
-import Slider from '../components/Slider'
+import PhotoSlider from '../components/PhotoSlider'
 
 
 const Main = () => {
@@ -8,7 +8,7 @@ const Main = () => {
   return (
     <div>
       <Header/>
-      <Slider/>
+      <PhotoSlider/>
     </div>
   )
 }

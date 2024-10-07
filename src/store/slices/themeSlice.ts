@@ -8,6 +8,7 @@ export interface ThemeState {
     color: string,
     bodyBackground: string;
     slideBackground: string;
+    blureSlide: string;
 
 }
 
@@ -15,7 +16,8 @@ const initialState: ThemeState = {
     headerBackground: '#f2d13e',
     color: 'black',
     bodyBackground: 'white',
-    slideBackground: 'gray'
+    slideBackground: 'gray',
+    blureSlide: '100%'
 }
 
 
@@ -27,13 +29,15 @@ export const ThemeSlice = createSlice({
             if(state.bodyBackground === 'white'){
                 state.headerBackground = '#333745'
                 state.bodyBackground = 'rgb(28, 31, 42)'
-                state.color = 'honeydew'
+                state.color = 'white'
                 state.slideBackground = 'rgb(28, 31, 42)'
+                state.blureSlide = '50%'
             }else {
                 state.headerBackground = '#f2d13e'
                 state.bodyBackground = 'white'
                 state.color = 'black'
                 state.slideBackground = 'gray'
+                state.blureSlide = '100%'
             }
         }
     }

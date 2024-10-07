@@ -33,6 +33,7 @@ const Slider = () => {
           <motion.div className='first' style={{ transform: 'rotateY(0deg)' }}>
             <h1 style={{ color: theme.color }}>{level}</h1>
           </motion.div>
+          
           <motion.div className='last' style={{ transform: 'rotateY(180deg)' }}>
             <p className='slideText' style={{ color: theme.color }}>
               <h1>Що потрібно знати для рівня {level}</h1>
