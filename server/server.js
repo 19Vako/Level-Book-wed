@@ -1,4 +1,4 @@
-
+require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
 const { UserScheme } = require("./schema.tsx"); 
@@ -9,9 +9,8 @@ app.use(express.static("public"));
 app.use(express.json());
 
 
-
 // Подключение к MongoDB с использованием Mongoose
-const URL = "mongodb+srv://frymendzordan:rPyULAdW1YhHjELk@cluster0.uiznyg9.mongodb.net/Level_Book?retryWrites=true&w=majority&appName=Cluster0";
+const URL = process.env.Mongo_URL
 mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
     console.log("DB is connected!");
@@ -23,7 +22,8 @@ mongoose.connect(URL, { useNewUrlParser: true, useUnifiedTopology: true })
 
 
 // Запуск сервера
-app.listen(3000, () => {
+const PORT = process.env.PORT
+app.listen(PORT, () => {
   console.log("Server is started on port 3000");
 });
 
