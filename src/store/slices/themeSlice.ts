@@ -13,11 +13,13 @@ export interface ThemeState {
 }
 
 const initialState: ThemeState = {
+
     headerBackground: '#f2d13e',
     color: 'black',
     bodyBackground: 'white',
     slideBackground: 'gray',
     blureSlide: '100%'
+    
 }
 
 

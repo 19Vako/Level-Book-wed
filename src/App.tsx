@@ -1,17 +1,19 @@
 import React from 'react';
+import { useEffect } from 'react';
 import './App.css';
 import { Routes, Route } from 'react-router';
 import { BrowserRouter as Router } from 'react-router-dom';
 
 
-import { useAppSelector } from './store/hooks';
-
+// Redux
+import { useAppSelector, useAppDispatch } from './store/hooks';
+import { GetA1 } from './store/slices/serverSlice'
 
 // Stack
 import Main from './stack/main';
 import User from './stack/user';
 
-//Levels
+// Levels
 import A1 from './stack/levels/A1';
 import A2 from './stack/levels/A2';
 import B1 from './stack/levels/B1';
@@ -23,6 +25,15 @@ import C2 from './stack/levels/C2';
 
 function App() {
   const theme = useAppSelector(state => state)
+
+  const Dispatch = useAppDispatch()
+
+  useEffect(() => {
+    Dispatch(GetA1())
+  },[Dispatch])
+
+  
+
   return (
     <div style={{backgroundColor: theme.Theme.bodyBackground, minHeight: '100vh'}}>
         <Router>
