@@ -6,7 +6,6 @@ import { useAppSelector, useAppDispatch } from '../store/hooks';
 import { changeTheme } from '../store/slices/themeSlice';
 
 // icons
-import { SiFacebookgaming } from "react-icons/si";
 import { FaUserCircle } from "react-icons/fa";
 import { ImSun } from "react-icons/im";
 import { FaMoon } from "react-icons/fa";
@@ -20,19 +19,15 @@ const Header = () => {
 
   return (
     
-    <div  className='HeaderContainer' style={{backgroundColor: theme.Theme.headerBackground}}>
-      
+    <div className='HeaderContainer' style={{backgroundColor: theme.Theme.headerBackground}}>
     <div className='Header' >
 
       <Link to='/' className='logoLink'>
         <div className='logoContainer' style={{backgroundColor: theme.Theme.headerBackground}}>
-          <SiFacebookgaming className='logoIcon' /> 
+          <img className='logoIcon' src='/book.png' alt=''/>
           <h1>Level Book</h1>
         </div>
       </Link>
-
-
-      
      
       <div className='headerOptions'>
         <div className='Levels'>
@@ -46,7 +41,10 @@ const Header = () => {
       <div className='themeAndUser' onClick={() => Dispatch(changeTheme())}>
         {theme.Theme.bodyBackground === 'white' ? <ImSun className='iconTheme'/> : <FaMoon className='iconTheme' style={{transform: 'none'}}/>}
       </div>
-      <FaUserCircle className='iconUser'/>
+      <Link to='/user'>
+        <FaUserCircle className='iconUser'/>
+      </Link>
+      
       </div>
 
     </div>
