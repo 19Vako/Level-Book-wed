@@ -1,6 +1,7 @@
 .swiper {
   width: 100%; 
-  height: 50vw; 
+  height: 57vw; 
+  pointer-events: none;
 }
 
 .slide {
@@ -11,3 +12,4 @@
   width: 100%;
   height: 100%
 }
+

@@ -12,6 +12,9 @@
     "@types/node": "^16.18.107",
     "@types/react": "^18.3.5",
     "@types/react-dom": "^18.3.0",
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "framer-motion": "^11.7.0",
     "history": "^5.3.0",
     "mongodb": "^6.8.0",
@@ -30,7 +33,6 @@
   "scripts": {
     "start-server": "node ./server/server.js",
     "start": "react-scripts start",
-    "run-server": "node ./server/server.js",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
