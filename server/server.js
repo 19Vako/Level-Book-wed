@@ -20,9 +20,8 @@ mongoose
     console.log('Error connecting to DB:', err);
   });
 
-// Запуск сервера
-app.listen(env.PORT, () => {
-  console.log(`Server is started on port ${env.PORT}`);
+app.listen(PORT, () => {
+  console.log(`Server is started on port ${PORT}`);
 });
 
 // GET-запрос для получения всех пользователей
