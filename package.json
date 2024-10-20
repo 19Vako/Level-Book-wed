@@ -33,7 +33,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "dev": "concurrently \"npm run start-server\" \"npm run start\"",
+    "dev-run": "concurrently \"npm run start-server\" \"npm run start\"",
     "start-server": "node ./server/server.js",
     "start": "react-scripts start",
     "prettier": "npx prettier --write .",
