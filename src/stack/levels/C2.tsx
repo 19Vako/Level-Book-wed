@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 function C2() {
-  return (
-    <div>C2</div>
-  )
+  return <div>C2</div>;
 }
 
-export default C2
+export default C2;

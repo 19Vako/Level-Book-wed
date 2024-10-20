@@ -1,6 +1,12 @@
 {
   "name": "level_book_web",
   "version": "0.1.0",
+  "prettier": {
+    "semi": true,
+    "singleQuote": true,
+    "tabWidth": 2,
+    "trailingComma": "es5"
+  },
   "private": true,
   "dependencies": {
     "@react-spring/web": "^9.7.4",

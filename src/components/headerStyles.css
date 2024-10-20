@@ -1,110 +1,101 @@
 h1 {
-    margin: 0;
+  margin: 0;
 }
 
 a {
-   text-decoration: none;
+  text-decoration: none;
 }
 
 .HeaderContainer {
-   display: flex;
-   justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .Header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 4vw;
-    padding: 1vw;
-    width: 70vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 4vw;
+  padding: 1vw;
+  width: 70vw;
 }
 
 .logoLink {
-    display: flex;
-    align-items: center;
-    width: 15vw;
-    height: 4vw;
+  display: flex;
+  align-items: center;
+  width: 15vw;
+  height: 4vw;
 }
 
 .logoContainer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 15vw;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 15vw;
 }
 
 .logoIcon {
-    color: white;
-    height: 4vw;
-    width: 4vw;
-    margin-right: 1vw;
+  color: white;
+  height: 4vw;
+  width: 4vw;
+  margin-right: 1vw;
 }
 
 .logoLink h1 {
-    font-family: 'Noto';
-    font-size: 1.7vw;
-    color: white;
+  font-family: 'Noto';
+  font-size: 1.7vw;
+  color: white;
 }
 
 .link {
-    font-family: 'Noto';
-    font-size: 2vw;
-    color: white;
+  font-family: 'Noto';
+  font-size: 2vw;
+  color: white;
 }
 
 .Levels {
-    display: flex;
-    justify-content: space-between;
-    width: 20vw;
-    margin-right: 4vw;
+  display: flex;
+  justify-content: space-between;
+  width: 20vw;
+  margin-right: 4vw;
 }
 
 .Levels h1 {
-    font-family: 'Noto';
-    color: white;
-    font-size: 1.5vw;
-    transition: color 0.3s ease;
+  font-family: 'Noto';
+  color: white;
+  font-size: 1.5vw;
+  transition: color 0.3s ease;
 }
 
 .Levels h1:hover {
-    color: #f2d13e
+  color: #f2d13e;
 }
 
-
-
-
-
 .themeAndUser {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .headerOptions {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 
 .iconUser {
-    width: 3vw;
-    height: 3vw;
-    color: white;
-    margin-left: 1vw;
+  width: 3vw;
+  height: 3vw;
+  color: white;
+  margin-left: 1vw;
 }
 
 .iconTheme {
-    width: 2.5vw;
-    height: 2.5vw;
-    color: white;
-    transition: transform 0.5s ease;
-    
+  width: 2.5vw;
+  height: 2.5vw;
+  color: white;
+  transition: transform 0.5s ease;
 }
 
 .iconTheme:hover {
-   transform: rotate(160deg);
+  transform: rotate(160deg);
 }
-
-
-
-
