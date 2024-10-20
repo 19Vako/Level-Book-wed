@@ -19,13 +19,10 @@ mongoose.connect(env.Mongo_URL, { useNewUrlParser: true, useUnifiedTopology: tru
     console.log("Error connecting to DB:", err);
   });
 
-
-
 // Запуск сервера
 app.listen(env.PORT, () => {
-  console.log("Server is started on port 3000");
+  console.log(`Server is started on port ${env.PORT}`);
 });
-
 
 
 // GET-запрос для получения всех пользователей
@@ -53,24 +50,43 @@ app.get(env.GetA1, async (_, res) => {
 })
 
 
-
-
-// POST-запрос для регистрации нового пользователя
 app.post(env.Registration, async (req, res) => {
+
   try {
-    const { name } = req.body; // Получаем имя пользователя из тела запроса
-    if (!name) {
-      res.status(400).json({ message: "Ім'я обов'язкове!" }); // Проверяем наличие имени
+    const { name, password } = req.body; 
+    const find = await UserScheme.find({name, password})
+
+    if(!find){
+      const newUser = await UserScheme.create({ name, password }); 
+      res.status(201).json({ message: "Користувач зареєстрований!", user: newUser });
+    }
+    else{
+      console.log('Користувач вже зареєстрований')
+      res.status(500).json({ message: "Користувач вже зареєстрований"})
     }
 
-    const newUser = await UserScheme.create({ name }); // Создаем нового пользователя
-    res.status(201).json({ message: "Користувач зареєстрований!", user: newUser }); // Отправляем ответ с данными нового пользователя
   } catch (err) {
-    console.error("користувач не доданий до колекції", err); // Логируем ошибку
-    res.status(500).json({ message: "Помилка при створенні користувача!" }); // Отправляем ответ с ошибкой
+    console.error("користувач не доданий до колекції", err); 
+    res.status(500).json({ message: "Помилка при створенні користувача!" }); 
   }
+
 });
 
+
+app.post(env.LogIn, async (req, res) => {
+   try{
+    const { name, password } = req.body
+    
+    const find = await UserScheme.find({name, password})
+    if(find){
+      console.log("Ви ввійшли в свій аккаунт")
+      res.status(200).json(find)
+    }
+   }catch {
+    console.log("Користувач не знайдений")
+    res.status(404).json({massage: "Користувач не знайдений"})
+   }
+})
 
 
 
