@@ -18,7 +18,7 @@ function TopForBeginners() {
         {A1.map((book: any, index) => {
           return (
             <div key={index} className='bookContainer'>
-              <img className='bookImg' src={book.photo}/>
+              <img className='bookImg' src={book.photo} alt=''/>
               <h3 className='bookName'>{book.namebook}</h3>
             </div>
           )

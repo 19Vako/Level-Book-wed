@@ -41,7 +41,7 @@ const Header = () => {
       <div className='themeAndUser' onClick={() => Dispatch(changeTheme())}>
         {theme.Theme.bodyBackground === 'white' ? <ImSun className='iconTheme'/> : <FaMoon className='iconTheme' style={{transform: 'none'}}/>}
       </div>
-      <Link to='/user'>
+      <Link to='/log_in'>
         <FaUserCircle className='iconUser'/>
       </Link>
       

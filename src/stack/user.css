@@ -1,5 +1,6 @@
 h1 {
    font-family: 'Noto';
+   font-size: 3vw;
 }
 .userIcon {
    width: 15vw;
@@ -37,18 +38,45 @@ h1 {
    flex-direction: row;
    margin-top: 5vw;
 }
+
 .pngBook {
    width: 49vw;
    height: 14vw
 }
 
 .favoriteBooks {
+   height: 35vw;
+   background-image: url("/public/imgs/pngwing.com\ \(5\).png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
    display: flex;
    justify-content: center;
-   margin-top: 5vw;
+   padding-top: 2vw;
+   
 }
 
-.favoriteBooks h1{
-   font-size: 3vw;
+
+.readingNow {
+   height: 35vw;
+   background-image: url("/public/imgs/pngwing.com\ \(5\).png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   padding-top: 2vw;
+
 }
 
+.library {
+   height: 35vw;
+   background-image: url("/public/imgs/pngwing.com\ \(5\).png");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   display: flex;
+   justify-content: center;
+   padding-top: 2vw;
+   
+}

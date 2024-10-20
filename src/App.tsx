@@ -1,3 +1,4 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from 'react';
 import { useEffect } from 'react';
 import './App.css';
@@ -12,6 +13,8 @@ import { GetA1 } from './store/slices/serverSlice'
 // Stack
 import Main from './stack/main';
 import User from './stack/user';
+import Log_in from './stack/log_in';
+import Sign_up from './stack/sign_up';
 
 // Levels
 import A1 from './stack/levels/A1';
@@ -41,6 +44,8 @@ function App() {
           
             <Route path='/' element={<Main />} />
             <Route path='/user' element={<User />} />
+            <Route path='/log_in' element={<Log_in />} />
+            <Route path='/sign_up' element={<Sign_up/>}/>
             <Route path='/A1' element={<A1 />} />
             <Route path='/A2' element={<A2 />} />
             <Route path='/B1' element={<B1 />} />

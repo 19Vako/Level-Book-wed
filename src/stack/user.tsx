@@ -54,13 +54,16 @@ const User = () => {
        
       </div>
       
+      <div className='readingNow'>
+        <h1 style={{color: theme.color}}>READING NOW</h1>
+        
+      </div>
+
       <div className='favoriteBooks'>
         <h1 style={{color: theme.color}}>FAVORITE BOOKS</h1>
       </div>
 
-      <div className='readingNow'>
-        <h1 style={{color: theme.color}}>READING NOW</h1>
-      </div>
+      
 
       <div className='library'>
         <h1 style={{color: theme.color}}>LIBRARY</h1>
